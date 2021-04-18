@@ -2,7 +2,7 @@
 
 Frontend for [musiclo](https://wierzba.wzks.uj.edu.pl/~19_mytych/projekt/music-database/) webservice, which I created for my Databases 2 classes at University.
 
-Features & solutions:
+### Features & solutions:
 * Genius API integration & lyrics automatic search
 * Charts using CanvasJS for React
 * React Infinite Scroller
@@ -24,3 +24,5 @@ npm install
 npm start
 
 ```
+
+You can always visit live version [here](https://wierzba.wzks.uj.edu.pl/~19_mytych/projekt/music-database/), or setup your local back-end by cloning this [repository]().
