@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,500;0,700;1,200;1,300;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,400;0,500;0,600;1,300&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;    
+  font-size: 0.85rem;
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: normal;
+  background-color: #131313;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: bold;
+}
+
+a{
+  text-decoration: none;
+}
+
+input, textarea, select {
+  border: none;
+  padding: 0.3rem;
+  margin: 0.5rem;
+  margin-left: 0.2rem;
+  font-size: 1rem;
+  font-family: 'Work Sans', sans-serif;
+  color: white;
+}
+
+input, textarea, select {
+  transition: 0.3s;
+  border: none;
+  font-size: 1rem;
+  margin: 0.5rem;
+  margin-left: 0.2rem;
+  font-family: 'Work Sans', sans-serif;
+  background-color: rgba(82, 82, 82, 0.849);
+  border: 2px solid #41ead49b; 
+  color: white;
+  box-shadow: 2px 2px 4px rgb(0,0,0);
+  border-radius: 3px;
+  width: 100%;
+}
+
+input:active, 
+textarea:active, 
+select:active {
+  outline: none;
+}
+
+input:focus, 
+textarea:focus, 
+select:focus {
+  border: 3px solid #1afbddcc; 
+  outline: none;
+}
+
+select {
+  background-color: rgba(56, 56, 56, 0.459);
+}
+
+ul, li{
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.NoData{
+  color: rgba(255, 255, 255, 0.726);
+  font-size: 1.1rem;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.toggle-details-btn{
+  border: none;
+  padding: 0.7rem 0.7rem 0.7rem 0;
+  outline: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.76);
+  margin-bottom: 1rem;
+  background-color: transparent;
+  text-shadow: 2px 2px 4px rgb(0,0,0);
+}
+
+.toggle-details-btn:hover{
+  color: white;
+  transition: 0.15s;
+}
+
+.toggle-details-btn:active{
+  transition: 0s;
+  color: rgba(255, 255, 255, 0.397);
+}
+
+.input-label{
+  display: block;
+  width: 100%;
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid #41ead49b; 
+  font-size: 0.8rem;
+  font-style: italic;
+  padding-top: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+::-moz-selection {
+  background-color: rgb(143, 0, 107);
+  color: black;
+  text-shadow: none;
+}
+
+::selection {
+  background-color: rgb(143, 0, 107);
+  color: black;
+  text-shadow: none;
+}
+
+option{
+  background-color: #131313;
+}
+
+option:hover{
+  border-left: 6px rgb(112, 112, 112);
+}
+
+option:checked{
+  border-left: 6px rgb(70, 70, 70);
+}
+
+.details-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.details-p{
+  flex-grow: 1;
+  border-right: 2px solid rgba(70, 70, 70, 0.493);
+  width: 100%;
+  margin-right: 2vw;
+}
+
+.italic-colored{
+  font-style: bold;
+  font-size: 1.2rem;
+}
+
+.pink-h{
+  color: #ff4d8b;
+  font-weight: bolder;
+  font-size: 1rem;
+  display: inline-block;
+  padding-top: 0.6rem;
+  padding-bottom: 0.7rem;
+}
+
+.release-date{
+  margin-top: 0.5rem;
+  font-size: 1.05rem;
+  font-style: italic;
+}
+
+.spotify-chart{
+  flex-grow: 1;
+}
+
+.canvasjs-chart-credit{
+  position: relative;
+  left: 155vw;
+}
+
+.spotify-chart, .canvasjs-chart-canvas{
+  position: static;
+}
+
+.italic-colored-small{
+  font-style: italic;
+  font-size: 0.85rem;
+  color: rgba(204, 204, 204, 0.63);
+}
+
+.italic-w-p{
+  color: white;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.mkey{
+  font-size: 1.15rem;
+  padding-top: 0;
+  margin-top: 0.3rem;
+  font-family: 'EB Garamond', serif;
+}
+
+.search-bar-input{
+  font-family: 'Work Sans', sans-serif;
+}
+
+.yt-link{
+  color: white;
+  text-decoration: none; 
+}
+
+.loader-wrapper{
+  text-align: center;
+  padding: 2rem;
+}
+
+.loader {
+  width: 8rem;
+}
+
+.tiny-caption{
+  color: #ffffff8e;
+  font-size: 0.7rem;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgb(0,0,0);
+}
+
+.song-name{
+  display: inline-block;
+  font-family: 'Work Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 0.6rem;
+  padding-top: 0.3rem;
+  font-size: 1.3rem;
+  text-shadow: 2px 2px 4px rgb(0,0,0);
+}
+
+.artist-name{
+  margin-top: 0.4rem;
+  font-size: 1.2rem;
+}
+
+.album-name{
+  font-size: 1.15rem;
+  margin-top: 0.4rem;
+  color: #fbff12;
+}
+
+.main-album-name{
+  font-size: 1.35rem;
+}
+
+.spotify-iframe {
+  background:url("./assets/loading.svg") center center no-repeat;
+  background-size: 5rem 5rem;
+}
+
+.selected-search-select-item{
+  font-size: 0.7rem;
+  margin: 0.2rem;
+  cursor: pointer;
+  display: inline-block;
+  color: white;
+  padding: 0.25rem 0.3rem 0.1rem 0.2rem;
+  border-radius: 10px;
+  border: 3px solid #41ead49b; 
+  width: fit-content;
+}
+
+.narr{
+  font-size: 1rem;
+  padding: 0.3rem 0.4rem 0.3rem 0.4rem;
+}
+
+.select-srch-li{
+  display: inline-block;
+}
+
+.blurred-form-background{
+  position: fixed;
+  z-index: 100;
+  width: 300vw;
+  height: 300vw;
+  top: -25rem;
+  left: -25rem;
+  background-color: #1313138e;
+  backdrop-filter: blur(5px);
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 9px;
+}
+
+::-webkit-scrollbar:hover {
+  -webkit-appearance: none;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #ff4d8b91;
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+  box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+  transition: 0.2s;
+}
+
+::-webkit-scrollbar-thumb:hover {  
+  background-color: #ff689d91;
+}
+
+::-webkit-scrollbar-thumb:active {  
+  background-color: #ff075e91;
+}
+
+input[type=checkbox] {
+  padding: 0.3rem;
+  box-shadow: 0;
+  box-shadow: none;
+  text-align: left;
+}
+
+.spotify-feature-numerical {
+  font-size: 1.25rem;
+  display: inline-block;
+  padding-left: 0.6rem;
+  position: relative;
+  top: -0.1rem;
+}
+
+.form-submit-btn{
+  font-family: 'Work Sans', sans-serif;
+  padding: 0.5rem 3.5rem 0.5rem 3.5rem;
+  font-style: bolder;
+  margin-top: 1rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgb(0,0,0);
+  font-size: 1.15rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.form-submit-btn:active{
+  transform: scale(0.7);
+}
+
+.form-submit-btn:hover{
+  transform: scale(1.05);
+}
+
+.form-submit-btn:focus{
+  outline: none;
+}
+
+input[type=range] {
+  display: inline-block;
+  -webkit-appearance: none;
+  width: 88%;
+  background: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none; 
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent; 
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -14px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #06a57d;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #06a57d;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: #06a57d;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+  background: #06a57d;
+}
+
+input[type=range]::-ms-fill-upper {
+  background: #06a57d;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+  background: #06a57d;
+}
+
+.above-box{
+  z-index: 9999;
+}
+
+.album-spotify-preview{
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #fbff12; 
+  margin: 1rem 0 1rem 0;
+  padding: 2rem 0 2rem 0;
+  margin-bottom: 0.3rem;  
+}
+
+.album-spotify-preview:hover{
+  color: #fcff5c; 
+  transition: 0.3s;
+}
+
+.album-spotify-preview:active{
+  transition: 0s;
+  color: #909200; 
+}
+
+.explicit-mark{
+  display: inline-block;
+  width: 0.89rem;
+  height: 0.89rem;
+  color: #1f1f1f;
+  background-color: rgb(230, 230, 230);
+  border-radius: 0.3rem;
+  text-align: center;
+  font-weight: 900;
+  box-shadow: 2px 2px 4px rgb(0,0,0);
+  font-size: 0.7rem;
+  position: relative;
+  bottom: 0.15rem;
+  left: 0.55rem;
+}
+
+#success-alert-box,
+#fail-alert-box{
+  position: fixed;
+  font-size: 1rem;
+  margin: 0 auto;
+  padding: 0.25rem;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 9999;
+  bottom: 0;
+  left: 0;
+  display: none;
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 2px 2px 4px rgb(0,0,0);  
+  backdrop-filter: blur(5px);
+}
+
+#success-alert-box{
+  background-color: rgba(61, 122, 0, 0.575);
+}
+
+#fail-alert-box{
+  background-color: rgba(189, 16, 0, 0.575);
+}
+
+.album-track, .artists-album{
+  padding: 0.4rem 0 0.1rem 0;
+}
+
+.yellow-inl{
+  color: #fbff12;
+  font-size: 1rem;
+}
+
+.beta-f-sign{
+  font-size: 0.5rem;
+  font-weight: bolder;
+  position: relative;
+  top: -1rem;
+  color: white;
+  margin: 0 auto;
+  width: fit-content;
+  text-shadow: 1px 1px 3px rgb(0,0,0);
+  padding: 0.06rem 0.25rem 0.07rem 0.25rem;
+  border-radius: 4px;
+  background-color: rgb(179, 68, 68);
+  -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+  filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+}
+
+.track-no{
+  display: inline-block;
+  width: 0.5rem;
+  font-size: 0.8rem;
+  padding-right: 1.1rem;
+  color: rgba(255, 255, 255, 0.541);
+}
+
+.track-spotify-icon, .yt-btn{
+  width: 0.9rem;
+  position: relative;
+  bottom: -0.15rem;
+  left: -0.25rem;
+}
+
+@media only screen and (max-width: 1400px) {
+  .details-box{
+    display: block;
+    width: 100%;
+  }
+
+  .details-p{
+    width: 100%;
+    border-right: none;
+    margin-right: none;
+    border-bottom: 2px solid rgba(70, 70, 70, 0.493);
+    margin-bottom: 1.2rem;
+  } 
+
+  .spotify-chart{
+    width: 100vw;
+    overflow-x: scroll;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  input, textarea, select {
+    padding: 0.1rem;
+    margin: 0.2rem;
+    margin-left: 0.1rem;
+    font-size: 0.9rem;
+    width: 96%;
+  }  
+
+  .cancel-btn, .form-submit-btn{
+    display: block;
+    position: static;
+    margin: 0 auto;
+    float: none;
+    padding: 0.4rem 2rem 0.4rem 2rem;
+    width: 60vw;
+    margin-top: 1.2rem;
+    text-align: center;
+  }
+
+  .cancel-btn{
+    position: relative;
+  }
+}

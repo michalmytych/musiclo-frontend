@@ -1,0 +1,64 @@
+.App {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  padding: 0.6rem 2rem 0.6rem 2rem;
+  margin: 0.4rem;
+  font-weight: bold;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.add-item-wrapper{
+  display: inline-block;
+  position: relative;
+  top: -0.3rem;
+  width: 4rem;
+  margin-left: 1rem;
+}
+
+.crud-icon {
+  margin-left: 1rem;
+  vertical-align: middle;
+  background: none;
+  cursor: pointer;
+  width: 4rem;
+  height: 4rem;
+  -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+  filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+  transition: 0.4s;
+}
+
+.crud-icon:hover {
+  transform: scale(1.1);
+}
+
+.crud-icon:active {
+  transition: 0.1s;
+  transform: scale(0.9);
+}
+
+@media only screen and (max-width: 800px) {
+  .crud-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .add-item-icon, .add-item-wrapper {
+    padding: 0;
+    margin-right: 0rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .add-item-wrapper{
+    margin-left: 0.2rem;
+  }
+}

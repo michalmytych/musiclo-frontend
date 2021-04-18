@@ -1,0 +1,23 @@
+.Homepage {
+    box-sizing: border-box;
+    margin: 0 auto;
+    border: 0;
+    padding: 0;
+}
+
+.crud-container {
+    display: flex;
+    flex-direction: row;
+    flex-flow: space-between;
+    min-height: 100vh;
+}
+
+.list-wrapper{
+    flex-grow: 2;
+    width: 100%;
+}
+
+.display-menu {
+    flex-grow: 0.5;
+    padding: 1rem 1rem 1rem 1rem;
+}

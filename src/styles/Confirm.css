@@ -1,0 +1,37 @@
+.confirm-box {
+    padding: 3rem 8rem 3rem 8rem;
+    background-color: rgb(26, 26, 26);
+    position: fixed;
+    top: 20vh;
+    left: 35.5vw;
+    color: white;
+    z-index: 9999;
+    -webkit-box-shadow: 10px 10px 31px 8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 31px 8px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 31px 8px rgba(0,0,0,0.75);
+}
+
+.message_header {
+    background-color: rgb(34, 34, 34);
+}
+
+.message_content {
+    background-color: rgb(3, 3, 3);
+}
+
+@media only screen and (max-width: 1000px) {
+    .confirm-box {
+        text-align: center;
+        width: 84%;
+        padding: 1rem;
+        top: 20vh;
+        left: 2.3vw;        
+    }    
+
+    .edit-btn{
+        text-align: center;
+        padding: 0;
+    }
+}
+
+

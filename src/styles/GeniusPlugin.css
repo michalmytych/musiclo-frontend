@@ -1,0 +1,83 @@
+.genius-embed-wrapper{
+    min-height: 9rem;
+    padding: 0.3rem;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 1rem;
+    text-align: center;
+    text-shadow: 3px 2px 6px rgba(0,0,0,0.58);
+    max-width: 13rem;
+}
+
+.genius-album-cover{
+    margin-top: 0.3rem;
+    margin: 0 auto;    
+    width: 4.5rem;
+    height: 4.5rem;
+    transition: 0.2s;
+    border: 1px solid rgba(255, 255, 255, 0.356);
+    background-image: url('../assets/smaller-loader.svg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.genius-album-cover:hover{
+    border: 1px solid rgba(255, 255, 255, 0.52);
+}
+
+.genius-item-name{
+    color: #ffd000; 
+    text-align: center;
+    margin: 0 auto;
+    margin: 0.6rem;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.rg_embed_link a{
+    text-decoration: none;
+    color: #ffd000; 
+}
+
+.rg_embed_link a:hover{ color: #ffe15c; }
+
+.rg_embed_link a:active{ color: #ac8c00; }
+
+.genius-logo{
+    display: inline-block;
+    color: #ffd000;
+    /* color: black; */
+    /* text-shadow: -0.1rem 0.7px 0px #ffd000; */
+    font-weight: bold;
+}
+
+.genius-search-qst{
+    width: fit-content;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-top: 0.2rem;
+    font-size: 0.65rem;
+    color: rgba(255, 255, 255, 0.534);
+    transition: 0.3s;
+}
+
+.genius-search-qst:hover{
+    text-decoration: underline;
+}
+
+.genius-search-qst:active{
+    transition: 0s;
+    color: rgba(255, 255, 255, 0.426);
+}
+
+.smaller-loader{
+    width: 6rem;
+    height: 6rem;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mt{
+    margin-top: 3rem;
+}

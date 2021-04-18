@@ -1,0 +1,117 @@
+.above-box {
+  padding: 3rem 6rem 3rem 6rem;
+  width: 55vw;
+  height: 65vh;
+  background-color: #131313d5;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  position: fixed;
+  left: 15.5vw;
+  top: 13vh;
+  z-index: 9999;
+  -webkit-box-shadow: 10px 10px 31px 8px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 31px 8px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 31px 8px rgba(0,0,0,0.75);     
+  overflow-y: scroll;
+  border-radius: 0.3rem;
+}
+
+
+.pop-item-btn{
+  width: 1.3rem;
+  height: 1.3rem;
+  vertical-align: middle;
+  padding-right: 0.2rem;
+  padding-bottom: 0.2rem;
+  -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+  filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+}
+
+
+.cancel-btn, .form-submit-btn{
+  display: inline-block;
+  font-size: 1.1rem;
+  padding: 0.5rem 4rem 0.5rem 4rem;
+  background-color: rgba(155, 155, 155, 0.287);
+  display: inline-block;
+  border-radius: 0.3rem;
+  border-bottom: 2px solid #ff206ebe;  
+  box-sizing: border-box;
+  transition: 0.3s;
+  text-shadow: 2px 2px 4px rgb(0,0,0);
+}
+  
+.cancel-btn:hover, .form-submit-btn:hover{
+  cursor: pointer;
+  background-color: unset;
+  border-bottom: 4px solid #ff4284;  
+}
+
+.cancel-btn:active, .form-submit-btn:active{
+  transition: 0s;
+  border-bottom: 6px solid #ff206ed8;  
+}
+
+.form-submit-btn{
+  position: relative;
+  bottom: -2.7rem;
+  border: none;
+  border-bottom: 2px solid #02bd8ebe;  
+}
+
+.form-submit-btn:hover{
+  border-bottom: 4px solid #0cffc2be;    
+}
+
+.form-submit-btn:active{
+  border-bottom: 6px solid #0cffc2be;  
+}
+
+.cancel-btn{
+  position: relative;
+  float: right;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .above-box {
+    padding: 1.5rem 3rem 1.5rem 3rem;
+    width: 65vw;
+    height: 67vh;
+    left: 12vw;
+    top: 12vh;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .above-box {
+    padding: 1rem 2rem 1rem 2rem;
+    width: 72vw;
+    height: 75vh;
+    left: 10.25vw;
+    top: 11.2vh;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .cancel-btn:active, .form-submit-btn:active{
+    display: block;
+  }
+
+  .above-box {
+    padding: 1rem 2rem 1rem 2rem;
+    width: 85%;
+    left: 2vw;
+    top: 10.2vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .above-box {
+    padding: 0.6rem;
+    width: 89%;
+    height: 80vh;
+    left: 2vw;
+    top: 14.2vh;
+  }
+}
